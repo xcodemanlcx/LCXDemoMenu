@@ -1,0 +1,6 @@
+framework module LCXDemoMenu {
+  umbrella header "LCXDemoMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,12 +7,36 @@
 //
 
 #import "LCXAppDelegate.h"
+#import <LCXDemoMenu/LCXTableViewController.h>
 
 @implementation LCXAppDelegate
+
+- (void)showDemoMenu{
+    //分区标题
+    NSArray *sectionTities = @[@"Section0",@"Section1"];
+    //分区内容标题
+    NSArray *section0 = @[@"DemoAViewController",@"DemoBViewController"];
+    NSArray *section1 = @[@"DemoAViewController",@"DemoBViewController"];
+
+    NSArray *exampleControllerNames = @[section0,section1];
+    if (exampleControllerNames.count != sectionTities.count) {
+        return ;
+    }
+    
+    //TableViewController
+    LCXTableViewController *tableViewController = [LCXTableViewController new];
+    tableViewController.sectionHeadTitles = sectionTities;
+    tableViewController.exampleControllerNames = exampleControllerNames;
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
+      navigationController.navigationBar.translucent = NO;
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self showDemoMenu];
     return YES;
 }
 
