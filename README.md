@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/LCXDemoMenu.svg?style=flat)](https://cocoapods.org/pods/LCXDemoMenu)
 [![Platform](https://img.shields.io/cocoapods/p/LCXDemoMenu.svg?style=flat)](https://cocoapods.org/pods/LCXDemoMenu)
 
+## Funtion
+A demo menu for development or learning
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
