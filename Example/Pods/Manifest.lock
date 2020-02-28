@@ -1,5 +1,5 @@
 PODS:
-  - LCXDemoMenu (0.1.0)
+  - LCXDemoMenu (0.1.2)
 
 DEPENDENCIES:
   - LCXDemoMenu (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LCXDemoMenu: efb4c91902ae963ab3bcc2cfcfa8e19566747d52
+  LCXDemoMenu: b70321a654b111634526a95d0ceae99e67580f21
 
 PODFILE CHECKSUM: a59844caffc553bdaeaa3cacd93d06dbb75427b9
 
